@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link href="calc.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <p>Click the button to make a BUTTON element with text.</p>
+
+    <button onclick="Box()">Try it</button>
+
+    <script>
+        function Button(value) {
+            var myButton = document.createElement("input");
+            myButton.type = "button";
+            myButton.value = value;
+            myButton.className = "button black";
+            myButton.style.width = 70;
+            myButton.onclick = function (eve) {
+                alert(eve.srcElement.value);
+            }
+            var placeHolder = document.getElementById("container");
+            placeHolder.appendChild(myButton);
+
+        }
+
+        function text() {
+            var myText = document.createElement("input");
+            myText.type = "text";
+            myText.placeholder = "enter your name here";
+            myText.style.width = 200;
+            var placeHolder = document.getElementById("container");
+            placeHolder.appendChild(myText);
+
+        }
+
+        function Box() {
+
+            this.text = new text();
+            this.button = new Button("test");
+
+
+        }
+    </script>
+
+    <div id="container" name="hello">
+
+    </div>
+
+</body>
+
+</html>
