@@ -15,7 +15,9 @@ function main(row, col) {
         col1.appendChild(_result.display);
         row1.appendChild(col1);
         table.appendChild(row1);
+
         //table.setAttribute("border", 1);
+        table.setAttribute("align", "center");
         for (i = 0; i < rows; i++) {
             var row = document.createElement("TR");
             for (j = 0; j < cols; j++) {
@@ -31,48 +33,34 @@ function main(row, col) {
         }
 
 
-        var row1 = document.createElement("TR");
+        var row2 = new addRow();
 
-
-
-        var col1 = document.createElement("TD");
         var btn = new cancel("C", "button orange");
-        col1.appendChild(btn.btn);
-        row1.appendChild(col1);
+        row2.addColm(btn.btn);
 
-        var col1 = document.createElement("TD");
         var btn = new Button("0");
-        col1.appendChild(btn.btn);
-        row1.appendChild(col1);
+        row2.addColm(btn.btn);
 
-
-        var col1 = document.createElement("TD");
         var btn = new equals("=", "button orange");
-        col1.appendChild(btn.btn);
-        row1.appendChild(col1);
+        row2.addColm(btn.btn);
 
-        table.appendChild(row1);
+        table.appendChild(row2.row);
 
-        var row1 = document.createElement("TR");
+        var row2 = new addRow();
 
-        var col1 = document.createElement("TD");
         var btn = new Button("+", "button pink");
-        col1.appendChild(btn.btn);
-        row1.appendChild(col1);
+        row2.addColm(btn.btn);
 
-        var col1 = document.createElement("TD");
         var btn = new Button("-", "button pink");
-        col1.appendChild(btn.btn);
-        row1.appendChild(col1);
+        row2.addColm(btn.btn);
 
-        var col1 = document.createElement("TD");
         var btn = new Button("*", "button pink");
-        col1.appendChild(btn.btn);
-        row1.appendChild(col1);
+        row2.addColm(btn.btn);
 
-        table.appendChild(row1);
+        table.appendChild(row2.row);
 
         document.body.appendChild(table);
+
     }
 
     function Result() {
@@ -85,6 +73,20 @@ function main(row, col) {
             return this;
         };
     }
+
+    function addRow() {
+        this.row = document.createElement("TR");
+        this.addColm = function (button) {
+            var col = document.createElement("TD");
+            col.appendChild(button);
+            col.setAttribute("align", "center");
+            this.row.appendChild(col);
+        };
+
+    }
+
+
+
 
     function Button(value, cls) {
 
