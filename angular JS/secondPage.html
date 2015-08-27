@@ -1,0 +1,46 @@
+<html data-ng-app>
+
+
+<head>
+    <title></title>
+
+
+    <script src="angular.min.js"></script>
+
+    <script>
+        var app = angular.module('myapp', []);
+
+        app.controller('simpleController', function ($scope) {
+            $scope.cust = [{
+                name: 'punith',
+                city: 'hyderabad'
+            }, {
+                name: 'nikhil',
+                city: 'chennai'
+            }, {
+                name: 'suraj',
+                city: 'dehli'
+            }];
+            $scope.name1 = '222';
+
+        });
+    </script>
+
+</head>
+
+<body data-ng-app='myapp'>
+    <div data-ng-controller='simpleController'>
+        <ul>
+            <li data-ng-repeat="c in cust">{{c.name | uppercase}} - {{c.city | lowercase}}</li>
+            <label ng-model="name1">{{name1}}</label>
+        </ul>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
