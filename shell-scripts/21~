@@ -1,0 +1,7 @@
+count=0
+for item in *
+do 
+	mv $item $count
+	count=`expr $count + 1` 
+done
+

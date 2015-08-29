@@ -1,0 +1,11 @@
+# working with variables ..
+
+echo "please enter your name :: "
+
+read my_name
+
+echo "hello $my_name, its fine day. isnt it??"
+
+
+
+

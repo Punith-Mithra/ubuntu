@@ -1,0 +1,14 @@
+
+cd ~
+cd Pictures/Wallpapers/
+#set `ls`
+
+# this statement changes the background and the wall papers must b present in pics folder  
+for item in *
+do 
+	if [ -f item ]
+	then 
+		gsettings set org.gnome.desktop.background picture-uri file:///home/punithm/Pictures/Wallpapers/$item
+		sleep 2m
+	fi
+done

@@ -1,0 +1,5 @@
+# it takes file name as an arg and renames it
+
+mv $1 $2
+
+cat $2
