@@ -1,0 +1,5 @@
+
+
+desktop background :: gsettings get org.gnome.desktop.background picture-uri  // this will get the present file name
+
+desktop background :: gsettings set org.gnome.desktop.background picture-uri <file path>   // this will set the desktop background 
