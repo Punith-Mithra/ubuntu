@@ -1,4 +1,4 @@
-<html data-ng-app>
+<html >
 
 
 <head>
@@ -6,41 +6,17 @@
 
 
     <script src="angular.min.js"></script>
-
-    <script>
-        var app = angular.module('myapp', []);
-
-        app.controller('simpleController', function ($scope) {
-            $scope.cust = [{
-                name: 'punith',
-                city: 'hyderabad'
-            }, {
-                name: 'nikhil',
-                city: 'chennai'
-            }, {
-                name: 'suraj',
-                city: 'dehli'
-            }];
-            $scope.name1 = '222';
-
-        });
-    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.min.js"></script>
+<script src="app.js"></script>    
 
 </head>
 
-<body data-ng-app='myapp'>
-    <div data-ng-controller='simpleController'>
-        <ul>
-            <li data-ng-repeat="c in cust">{{c.name | uppercase}} - {{c.city | lowercase}}</li>
-            <label ng-model="name1">{{name1}}</label>
-        </ul>
+<body data-ng-app="myapp">
+    <div >
+    <div data-ng-view = ""></div>
     </div>
 
-
-
-
-
-
 </body>
+
 
 </html>
