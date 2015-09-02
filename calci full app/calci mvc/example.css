@@ -2,19 +2,37 @@ body {
     background-color: tan;
 }
 
+div.outer{
+
+margin: auto;
+background-color: green;
+}
+
+div.one {
+
+  float: left;
+}
+
+div.two {
+  margin-left: 60px;
+}
+
+
 .box {
+    margin: 1%;
     background-color: #3d4543;
-    height: 300px;
-    width: 20%;
+    position: absolute;;
     border-radius: 5px;
+    width: 400px;
     position: relative;
+    height: 200px;
     top: 80px;
-    left: 40%;
+    left: 20%;
 }
 
 .display {
     background-color: #222;
-    width: 90%;
+    width: 100%;
     position: relative;
     left: 15px;
     top: 20px;
@@ -25,6 +43,19 @@ body {
     position: relative;
     height: 35px;
     width: 98%;
+    color: black;
+    background-color: #bccd95;
+    font-size: 21px;
+    text-align: right;
+}
+
+input {
+    position: relative;
+    height: 35px;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 90%;
     color: black;
     background-color: #bccd95;
     font-size: 21px;
@@ -86,6 +117,8 @@ body {
 .orange:active {
     border-top: black 2px solid;
 }
+
+
 
 p {
     line-height: 10px;

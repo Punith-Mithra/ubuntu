@@ -1,0 +1,17 @@
+<html>
+
+<head>
+
+    <link href="example.css" type="text/css" rel="stylesheet">
+    <script src="example.js"></script>
+
+</head>
+
+
+<body>
+
+    <button onclick="main(4,4);">Click me</button>
+
+</body>
+
+</html>

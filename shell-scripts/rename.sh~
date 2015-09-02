@@ -7,7 +7,7 @@ count=0
 for item in *
 do 
 	echo "$item $count"
-	mv "$item" "$count"
+	mv conv/$item $count
 
 	count=`expr $count + 1` 
 done
