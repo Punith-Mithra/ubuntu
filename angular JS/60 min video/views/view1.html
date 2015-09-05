@@ -1,0 +1,20 @@
+<div class="container">
+	<h2>This is view 1</h2>
+	Name : <br/>
+	<input type="text" data-ng-model = "filter.name">
+	<br/>
+	<ul>
+		<li data-ng-repeat="c in cust">{{c.filter.name | uppercase}} - {{c.city | lowercase}}</li>
+	</ul>
+	<h2> New Customer </h2>
+	<br/>Name:
+	<input type="text" data-ng-model = "newCustomer.name">
+	<br/>City:
+	<input type="text" data-ng-model = "newCustomer.city">
+	<br>
+	<button data-ng-click="addCustomer()">add customer</button>
+	<br>
+	<a href="#/view2"> view2</a>
+
+
+</div>

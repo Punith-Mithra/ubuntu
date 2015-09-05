@@ -1,0 +1,24 @@
+h2 {
+   text-align: center;
+}
+
+div .outer {
+   width: 500px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+div .outer input {
+   width: 85%;
+   margin: 0 auto;
+   text-align: right;
+}
+
+button {
+   width: 200px;
+}
+
+div .btn {
+   float: left;
+   width: 200px;
+}

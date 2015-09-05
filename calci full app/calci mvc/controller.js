@@ -1,7 +1,8 @@
 function buttonController(button, display) {
 
     if (button.innerHTML === "=") {
-        display.result.value = eval(display.result.value);
+        var result = display.result.value.replace(" ", "");
+        display.result.value = eval(result);
 
     } else if (button.innerHTML === "C" || button.innerHTML === "c") {
         display.result.value = "";
@@ -11,6 +12,8 @@ function buttonController(button, display) {
 
         display.result.value = display.result.value.substring(0, len - 1);
 
+    } else if (Model.prototype.operators.indexOf(button.innerHTML) !== -1) {
+        display.result.value += " " + button.innerHTML + " ";
     } else {
         display.result.value += button.innerHTML;
     }

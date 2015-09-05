@@ -1,0 +1,66 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+   <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+   MDIwMzc4NTg4MDE0NDEyOTkxOTc0ZWFmMg001
+   <div ng-controller="Demo">
+      <h4> Simple counter </h4>
+      <button ng-click="add(1)" class="button">Add</button>
+      <button ng-click="substract(1)" class="button">subtract</button>
+      <h1>count:: {{counter}}</h1>
+   </div>
+
+
+   <!--
+   <div ng-controller="MyDate">
+      {{clock}}
+   </div>
+-->
+
+   <!--
+
+    player Example
+   <div ng-controller="PlayerController">
+      <input type="text" ng-model="playing">
+      <button ng-click="play()" class="button" ng-show="!playing">Play</button>
+      <button ng-click="stop()" class="button alert" ng-show="playing">Stop</button>
+   </div>
+-->
+
+
+
+
+   <!--
+   <div ng-controller="parentController">
+      <div ng-controller="childController">
+         <a ng-click="sayHello()">Say Hello</a>
+      </div>
+      {{person}}
+   </div>
+-->
+
+
+   <!--
+   <div>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <h1>Hello, {{ yourName }}! {{name}}</h1>
+   </div>
+   <div ng-controller="MyController">
+      {{person.name= yourName}} {{name}} {{yourName}}
+      <h1>{{person.name}}</h1>
+      <div ng-controller="MyController">
+         {{person.name}}
+      </div>
+   </div>
+-->
+
+</body>
+
+</html>

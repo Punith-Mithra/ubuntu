@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ember Starter Kit</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/libs/jquery-1.10.2.js"></script>
+    <script src="js/libs/ember-template-compiler-1.12.0.js"></script>
+    <script src="js/libs/ember-1.12.0.debug.js"></script>
+    <script src="js/app.js"></script>
+    <!-- to activate the test runner, add the "?test" query string parameter -->
+    <script src="tests/runner.js"></script>
+</head>
+
+<body>
+
+
+    <script type="text/x-handlebars" id="help">
+        <h2>helper.ID</h2>
+
+    </script>
+
+
+
+
+    <script type="text/x-handlebars">
+        <h2>Welcome to Ember.js</h2>
+        <p>{{#link-to "arr"}} Array Page {{/link-to}}</p>
+        <p>{{#link-to "obj"}} Object page {{/link-to}}</p>
+        {{outlet}}
+    </script>
+
+    <script type="text/x-handlebars" id="punith">
+        <h2 {{action "headClicked"}}>hello punith.js</h2>
+        <br> {{textarea value=lastName cols="80" rows="6"}}
+        <p>{{length1 lastName}}</p>
+        <!--        <p>{{length1 lastName.no_of_words}}</p>-->
+        <p>{{firstName}}</p>
+        <p> {{lastName}}</p>
+        <p> {{perosnal.age}}</p>
+    </script>
+
+    <script type="text/x-handlebars" id="arr">
+
+        {{#each item in model}}
+        <p>{{item}}</p>
+        {{/each}}
+    </script>
+
+    <script type="text/x-handlebars" id="obj">
+        <p>{{makeShorter model.firstName}}</p>
+    </script>
+
+    <script type="text/x-handlebars" id="index">
+        <ul>
+            {{#each item in model}}
+            <li>{{item}}</li>
+            {{/each}}
+        </ul>
+    </script>
+
+
+</body>
+
+</html>

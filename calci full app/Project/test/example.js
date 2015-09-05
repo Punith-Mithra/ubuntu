@@ -10,30 +10,31 @@ function main(row, col) {
         var model = new calcModel();
 
         var outerDiv = document.createElement("DIV");
-        outerDiv.className="box";
+        outerDiv.className = "box";
 
         var numberDiv = document.createElement("DIV");
-        numberDiv.className="one";
+        numberDiv.className = "one";
 
         var calDiv = document.createElement("DIV");
-        calDiv.className="two";
+        calDiv.className = "two";
 
-       
+
 
         outerDiv.appendChild(_result.display);
 
         var table = document.createElement("TABLE");
-       // table.setAttribute("border", 1);
-       //table.setAttribute("align", "center");
+        // table.setAttribute("border", 1);
+        //table.setAttribute("align", "center");
+        count = 100;
         for (i = 0; i < rows; i++) {
             var row = document.createElement("TR");
             for (j = 0; j < cols; j++) {
-                
+
                 var col = document.createElement("TD");
-                if(count<model.numbers.length)
-                var btn = new Button(model.numbers[count]);
-                else 
-                    break;
+                // if (count < model.numbers.length)
+                var btn = new Button(count);
+                //else
+                // break;
                 count++;
                 col.appendChild(btn.btn);
                 row.appendChild(col);
@@ -41,18 +42,18 @@ function main(row, col) {
             table.appendChild(row);
         }
         numberDiv.appendChild(table);
-        count=0;
+        count = 0;
 
         table = document.createElement("TABLE");
-                //table.setAttribute("border", 1);
+        //table.setAttribute("border", 1);
         for (i = 0; i < rows; i++) {
             var row = document.createElement("TR");
             for (j = 0; j < cols; j++) {
-                
+
                 var col = document.createElement("TD");
-                if(count<model.splChar.length)
-                var btn = new Button(model.splChar[count], "button pink");
-                else 
+                if (count < model.splChar.length)
+                    var btn = new Button(model.splChar[count], "button pink");
+                else
                     break;
                 count++;
                 col.appendChild(btn.btn);
@@ -92,7 +93,7 @@ function main(row, col) {
     function Button(value, cls) {
 
         var that = this;
-        
+
         this.btn = document.createElement("BUTTON");
         var t = document.createTextNode(value); // Create a text node    
         this.btn.appendChild(t);
@@ -103,18 +104,18 @@ function main(row, col) {
 
         this.btn.onclick = function (value) {
             //alert(this.value);
-            if(that.btn.value === "="){
-                 _result.display.value = eval(_result.display.value);
-            }else if(that.btn.value === "C" || that.btn.value === "c"){
-                 _result.display.value = "";
-            }else if(that.btn.value === "bk"){
+            if (that.btn.value === "=") {
+                _result.display.value = eval(_result.display.value);
+            } else if (that.btn.value === "C" || that.btn.value === "c") {
+                _result.display.value = "";
+            } else if (that.btn.value === "bk") {
                 var len = _result.display.value.length;
                 console.log(len);
-                 _result.display.value = _result.display.value.substring(0, len-1);
-            }else{
-                 _result.display.value += this.value;
+                _result.display.value = _result.display.value.substring(0, len - 1);
+            } else {
+                _result.display.value += this.value;
             }
-           
+
         }
 
         return this;
@@ -125,11 +126,11 @@ function main(row, col) {
 
 
 
-    Button.prototype = new Result();
 
-    function calcModel(){
-        this.numbers = ['1','2','3','4','5','6','7','8','9','0'];
-        this.splChar = ['+','-','*','/','%','.','=','C','bk'];
+
+    function calcModel() {
+        this.numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+        this.splChar = ['+', '-', '*', '/', '%', '.', '=', 'C', 'bk'];
     }
 
 }

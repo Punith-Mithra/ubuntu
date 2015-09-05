@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="MyCalculator">
+
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+   <link href="css/main.css">
+   <script src="js/model.js"></script>
+   <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+   <div ng-controller="Calculator" class="outer">
+      {{result}}
+      <br>
+      <button ng-repeat="button in calci" value={{button.value}} ng-click="btnclick(button)">{{button.value}}</button>
+   </div>
+
+
+</body>
+
+</html>

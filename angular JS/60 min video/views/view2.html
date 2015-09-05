@@ -1,0 +1,10 @@
+<div class="container" ng-controller="simpleController" ng-app="myapp">
+	<h2>This is view 2</h2>
+	Name : <br/>
+	<input type="text" data-ng-model = "name">
+	<br/>
+	<ul>
+		<li data-ng-repeat="c in cust">{{c.name | uppercase}} - {{c.city | lowercase}}</li>
+	</ul>
+
+</div>

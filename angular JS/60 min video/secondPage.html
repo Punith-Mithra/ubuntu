@@ -1,0 +1,30 @@
+<html>
+
+
+<head>
+    <title></title>
+
+
+    <script src="angular.min.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="app.js"></script>
+
+</head>
+
+
+<body data-ng-app='myapp'>
+    <div data-ng-controller='simpleController'>
+        <ul>
+            <li data-ng-repeat="c in cust">{{c.name | uppercase}} - {{c.city | lowercase}}</li>
+
+        </ul>
+    </div>
+
+    <div ng-view></div>
+
+
+
+
+</body>
+
+</html>
