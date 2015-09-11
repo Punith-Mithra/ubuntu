@@ -1,0 +1,7 @@
+tr.ng-enter {
+   animation: bounceInUp 1s;
+}
+
+tr.ng-enter {
+   animation: bounceout 1s;
+}

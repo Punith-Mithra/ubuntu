@@ -1,0 +1,36 @@
+<div class="container">
+   <h2>AngularJS Sample Application</h2>
+   <div ng-controller="Add">
+      <div class="row form-group">
+         <input ng-model="book.title" type="text" placeholder="book title" class="myclass form-control col-ms-4">
+         <input ng-model="book.author " type="text" placeholder="book author" class="col-ms-4 form-control ">{{book.author|rev}}
+         <input ng-model="book.cost" type="text" placeholder="book cost" class="col-ms-4 form-control">
+         <button ng-click="addBook(book.title,book.author,book.cost)" class="btn btn-primary">add book</button>
+         <br>
+         <br>
+         <label class="for">Filter : </label>
+         <input ng-model="book1.title" type="text" placeholder="filter" class="form-control">
+         <input ng-model="book1.author" type="text" placeholder="filter" class="form-control">
+      </div>
+
+      <table class="table table-hover">
+         <tr ng-animate='animation' style="background: grey;">
+            <th>#</th>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Cost in $</th>
+         </tr>
+         <tr ng-animate="'animate'" ng-repeat="book in BookData | filter : book1:strict">
+            <td class=col-xs-1>
+               <input type=checkbox ng-checked='book.checked' ng-model='tick' ng-click="checkWatcher(book)">
+            </td>
+            <td class=col-xs-4>{{book.title}}</td>
+            <td class=col-xs-4>{{book.author}}</td>
+            <td class=col-xs-3>{{book.cost | currency}}</td>
+         </tr>
+      </table>
+      <button ng-click="remove()" class="btn btn-primary">remove book</button>
+
+   </div>
+
+</div>

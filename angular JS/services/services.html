@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="Service">
+
+<head>
+   <title>Angular JS Hello World</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-resource.js"></script>
+   <script src="service.js">
+   </script>
+
+</head>
+
+<body>
+   <div ng-controller="history">
+      <h2>GitHub User Viewer</h2> Enter username :
+      <input ng-model="params.month" placeholder="month">
+      <input ng-model="params.date" placeholder="date">
+      <button ng-click="history()">get history</button>
+      <p/>
+      <table>
+         <tr ng-repeat="event in events | reverse">
+            <td> <a href="{{event.links[0].link}}"> {{event.text}} </a></td>
+         </tr>
+
+      </table>
+      <div>
+
+
+      </div>
+      <p/>
+      <h3 ng-show="!found && done">Sorry! User not found!</h3>
+   </div>
+</body>
+
+</html>

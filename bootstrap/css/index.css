@@ -1,0 +1,19 @@
+.darkBG {
+   background: #999;
+}
+
+.darkerBG {
+   background: #666;
+}
+
+.darkestBG {
+   background: #333;
+}
+
+.container {
+   text-align: center;
+}
+
+.borders {
+   border: 1px solid black;
+}

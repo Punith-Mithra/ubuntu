@@ -2,21 +2,41 @@
 <html ng-app="MyCalculator">
 
 <head>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-   <link href="css/main.css">
+   <script src="js/angular.min.js"></script>
    <script src="js/model.js"></script>
    <script src="js/main.js"></script>
-
+   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+<link rel="stylesheet" href="css/index.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <body>
+   <div class="container">
 
-   <div ng-controller="Calculator" class="outer">
-      {{result}}
-      <br>
-      <button ng-repeat="button in calci" value={{button.value}} ng-click="btnclick(button)">{{button.value}}</button>
+      <div ng-controller="Calculator">
+
+         <br>
+         <div>
+            <input value={{result}}>
+         </div>
+
+         <div class="col-xs-6">
+
+            <div class="col-xs-3 btn-group" ng-repeat="button in calci">
+               <button value={{button.value}} class="btn btn-primary" ng-click="btnclick(button)">{{button.value}}</button>
+            </div>
+         </div>
+      </div>
+
    </div>
 
+
+
+
+
+   <script src="js/bootstrap.min.js">
+   </script>
+   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 </body>
 
