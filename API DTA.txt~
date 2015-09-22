@@ -1,0 +1,18 @@
+http://dev.markitondemand.com/Api/v2/InteractiveChart?parameters=
+
+{"Normalized":true,"StartDate":"2015-09-12T00:00:00-00","LabelPeriod":"Minute","EndDate":"2015-09-13T00:00:00-00","NumberOfDays":1,"DataInterval":5,"DataPeriod":"Minute","EndOffsetDays":1,"Elements":[{"Symbol":"AA","Type":"price","Params":[]}]}
+
+
+************************************************************
+
+yahoo API fro Socks::: 
+
+
+https://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.historicaldata where symbol = "YHOO" and startDate = "2009-09-11" and endDate = "2010-03-10"&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback=
+
+diff bw dates should b around 1-and half years..
+
+**************************************************************
+
+
+http://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.quotes where symbol in ("AAPL")&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys

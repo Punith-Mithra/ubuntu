@@ -1,0 +1,192 @@
+    1  sudo gedit .bashrc 
+    2  mysql
+    3  sudo apt-get update
+    4  sudo apt-get install python-software-properties python g++ make
+    5  sudo add-apt-repository ppa:chris-lea/node.js
+    6  sudo apt-get update
+    7  sudo apt-get install nodejs
+    8  nodejs --version
+    9  npm --version
+   10  npm install -g bower
+   11  ;
+   12  npm install -g bower
+   13  npm install -g grunt
+   14* 
+   15  clear
+   16  sudo apt-get install mysql-server-5.5.42
+   17  sudo apt-get install mysql-server-5.6
+   18  mysql
+   19  mysql -proot -upramati
+   20  mysql -uroot -ppramati
+   21  sudo apt-get update
+   22  sudo apt-get install python-software-properties python g++ make
+   23  sudo add-apt-repository ppa:chris-lea/node.js
+   24  sudo apt-get update
+   25  sudo apt-get install nodejs
+   26  nodejs --version
+   27  npm --version
+   28  npm install -g bower
+   29  sudo npm install -g bower
+   30  sudo npm install -g grunt
+   31  sudo npm install -g grunt-cli
+   32  ant
+   33  . .bashrc
+   34  ant
+   35  cd codeBase/
+   36  ls
+   37  ll
+   38  chmod +x *.sh
+   39  ll
+   40  ./wm-studio-code-setup.sh 
+   41  ssh-keygen
+   42  ./wm-studio-code-setup.sh 
+   43  ./wm-studio-code-setup.sh PunithMithra "Punith Mitra" punith.mitra@wavemaker.com
+   44  cd WaveMaker-Studio-Enterprise/
+   45  ls
+   46  cat README.md 
+   47  mvn -Pwmstudio-local clean install -DskipTests -Dproject.props.file=../../build-helpers/filters/saas-wmstudio-local.props
+   48  cd wavemaker-studio/wavemaker-app-runtime/
+   49  ls
+   50  cd src/main/webapp/
+   51  ls
+   52  rm -rf node_modules/
+   53  ls
+   54  sudo npm install
+   55  cd ..
+   56  mvn -Pwmstudio-local clean install -DskipTests -Dproject.props.file=../../build-helpers/filters/saas-wmstudio-local.props
+   57  cd wavemaker-studio-saas/wavemaker-saas-server/
+   58  ls
+   59  cd src/main/webapp/
+   60  ls
+   61  sudo npm install
+   62  cd ..
+   63  mvn -Pwmstudio-local clean install -DskipTests -Dproject.props.file=../../build-helpers/filters/saas-wmstudio-local.props
+   64  cd wavemaker-studio-saas/wavemaker-saas-server/
+   65  ls
+   66  cd src/main/webapp/
+   67  ls
+   68  cd ..
+   69  mvn -Pwmstudio-local clean install -DskipTests -Dproject.props.file=../../build-helpers/filters/saas-wmstudio-local.props
+   70  cd build-helpers/dev-script/
+   71  ls
+   72  ant
+   73  sudo ant
+   74* 
+   75  sudo ant
+   76  ant
+   77  cd
+   78  . .bashrc
+   79  cd codeBase/WaveMaker-Studio-Enterprise/build-helpers/dev-script/
+   80  ant
+   81  sudo ant
+   82  cd ..
+   83  git pull wmgit master 
+   84  git remote -v
+   85  cd wavemaker-studio
+   86  git remote -v
+   87  cd ..
+   88  cd wavemaker-studioa
+   89  cd wavemaker-studio/wavemaker-app-runtime/
+   90  git remote -v
+   91  cd ..
+   92  cd wavemaker-studio-artifacts/
+   93  git remote -v
+   94  cd ..
+   95  cd wavemaker-studio-commons/
+   96  git remote -v
+   97  cd ..
+   98  cd wavemaker-app-runtime/
+   99  git remote -v
+  100  git remote rm origin
+  101  git remote rm wmgit
+  102  git remote add wmgit ssh://PunithMithra@wmgit.pramati.com:29418/wavemaker-app-runtime
+  103  scp -p -P 29418 PunithMithra@wmgit.pramati.com:hooks/commit-msg .git/hooks/
+  104  git config remote.wmgit.push HEAD:refs/for/master
+  105  git config user.name "Punith Mitra"
+  106  git config user.email "punith.mitra@wavemaker.com"
+  107  git pull wmgit ma
+  108  git pull wmgit master
+  109  git fetch wmgit 
+  110  git remote -v
+  111  cd ..
+  112  cd wavemaker-studio-saas-artifacts/
+  113  git remote -v
+  114  cd ..
+  115  git remote -v
+  116  cd build-helpers/dev-script/
+  117  ant
+  118  sudo ant
+  119  cd
+  120  history >setup2
+  121  gedit setup2 
+  122  cd codeBase/WaveMaker-Studio-Enterprise/build-helpers/dev-script/
+  123  ant
+  124  ll
+  125  cd ..
+  126  ll
+  127  chmod +x dev-script/
+  128  ll
+  129  cd dev-script/
+  130  ll
+  131  chmod +x build.xml 
+  132  ll
+  133  ant
+  134  sudo ant
+  135* 
+  136  mvn
+  137  ant 
+  138  cd
+  139  touch data
+  140  gedit data
+  141  ant
+  142  sudo apt-get install ant
+  143  ant -v
+  144  vim .bashrc
+  145  sudo apt-get install vim
+  146  vim .bashrc
+  147  ant -v
+  148  . .bashrc
+  149  ant  -v
+  150  cd /usr/local/ant/
+  151  ll ant
+  152  ls
+  153  cd ..
+  154  ll ant/
+  155  sudo chown punithm:punithm ant/ -R
+  156  ll ant/
+  157  cd bin/
+  158  cd ..
+  159  cd ant/
+  160  cd ..
+  161  cd 
+  162  ls
+  163  cd codeBase/
+  164  ls
+  165  cd WaveMaker-Studio-Enterprise/
+  166  mvn
+  167  cd ..
+  168  ls
+  169  cd  WaveMaker-Studio-Enterprise/
+  170* 
+  171  mysql
+  172  mysql -uroot -p
+  173  las
+  174  clear
+  175  ls
+  176  ant
+  177  sudo rm /bin/sh
+  178  sudo ln -s /bin/bash /bin/sh
+  179  ant
+  180  cd 
+  181  cd Installations/
+  182  cd saas_setup/
+  183  cd shortcuts/
+  185  cd unix
+  186  sh t1start.sh 
+  187  sh t2start.sh 
+  188  sh t2start.sh -t 
+  189  cd 
+  190  history < final_setup
+  191  touch final_setup
+  192  history < final_setup
+  193  history > final_setup

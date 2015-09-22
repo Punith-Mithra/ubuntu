@@ -1,0 +1,54 @@
+    1  tar
+    2  cd /home/punithm/Downloads/
+    3  ls
+    4  sudo tar xf jdk-7u45-linux-x64.tar.gz -C /usr/local/
+    5  ls
+    6  sudo unzip ant.zip -d /usr/local/
+    7  sudo tar xf apache-maven-3.2.3-bin.tar.gz -C /usr/local/
+    8  cd
+    9  sudo gedit .bashrc
+   10  . .bashrc
+   11  java --version
+   12  maven -v
+   13  maven -version
+   14  sudo gedit .bashrc
+   15  . .bashrc
+   16  java --version
+   17  java -version
+   18  maven -v
+   19  mvn  -v
+   20  mvn -v
+   21  cd /usr/local/
+   22  ll
+   23  ln -s apache-maven-3.2.3/ mvn
+   24  sudo ln -s apache-maven-3.2.3/ mvn
+   25  ll
+   26  sudo ln -s apache-maven-3.2.3 mvn
+   27  ll
+   28  rm mvn
+   29  sudo rm mvn
+   30  ll
+   31  sudo ln -s apache-maven-3.2.3 mvn
+   32  ll
+   33  mvn -v
+   34  mvn -version
+   35  mvn --version
+   36  maven -v
+   37  cd
+   38  ant
+   39  mvn --version
+   40  cd /usr/local/
+   41  ll
+   42  rm mvn
+   43  sudo rm mvn
+   44  sudo ln -s apache-maven-3.2.3 maven
+   45  mvn --version
+   46  history
+   47  history -n
+   48  history
+   49  history > command_line_to_setup.txt
+   50  touch command_line_to_setup.txt
+   51  touch command_line_to_setup
+   52  cd
+   53  touch command_line_to_setup
+   54  history > command_line_to_setup
