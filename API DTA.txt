@@ -21,3 +21,11 @@ http://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.quotes wh
 
 
 http://dev.markitondemand.com/Api/v2/Lookup?input=A
+
+******************************************************************
+
+Custom Select
+
+select symbol,Bid,Change,Currency,PercentChange from yahoo.finance.quotes where symbol in ("AAPL","GOOG","YAHOO")
+
+*******************************************************************
