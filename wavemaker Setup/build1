@@ -1,0 +1,37 @@
+    1  cd ubuntu/
+    2  ls
+    3  cd
+    4  ls
+    5  cd ubuntu/
+    6  gedit API\ DTA.txt
+    7  cd 
+    8  sh wavemakerStop.sh 
+    9  sh wavemaker.sh 
+   10  sh wavemakerStop.sh 
+   11  sh wavemaker.sh 
+   12  gedit wavemaker.sh
+   13  gedit wavemakerStop.sh
+   14  sh wavemakerStop.sh
+   15  sh wavemaker.sh
+   16  sh wavemakerStop.sh
+   17  sh wavemaker.sh
+   18  history
+   19  sh wavemakerStop.sh
+   20  sh wavemaker.sh
+   21  gedit wavemaker.sh
+   22  ls
+   23  cd ~/Installations/saas_setup/shortcuts/unix/
+   24  ./t1stop.sh -f
+   25  ./t1start.sh 
+   26  cd
+   27  cd codeBase/WaveMaker-Studio-Enterprise/
+   28  gedit README.md 
+   29  mvn -Pwmstudio-local clean install -DskipTests -Dproject.props.file=../../build-helpers/filters/saas-wmstudio-local.props
+   30  cd wavemaker-studio-saas/wavemaker-saas-server/
+   31  ant dev-build -Dwm_studio_build_type=local -Dproject.props.file=../../build-helpers/filters/saas-wmstudio-local.props
+   32* 
+   33  cd
+   34  gedit build
+   35  gedit build1
+   36  touch build1
+   37  history> build1

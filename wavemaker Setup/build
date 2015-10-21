@@ -1,0 +1,7 @@
+punithm@PRINHYLTPHP0352:~/Installations/saas_setup/shortcuts/unix$ 
+    1  ./git_fetch.sh 
+    2  ./t1stop.sh 
+    3  ./t2stop.sh 
+    4  cd
+    5  touch build
+    6  history> build

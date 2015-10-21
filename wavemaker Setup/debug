@@ -1,0 +1,11 @@
+    1  cd ~/Installations/
+    2  ls
+    3  cd saas_setup/
+    4  ls
+    5  cd saas-studio-tomcat/logs/
+    6  ls
+    7  tail -f catalina.out 
+    8  history
+    9  cd
+   10  touch debug
+   11  history> debug
