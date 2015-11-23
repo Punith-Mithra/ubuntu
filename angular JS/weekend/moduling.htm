@@ -1,0 +1,32 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<div id="id1" ng-controller="myCtrl1">
+			<span ng-non-bindable>{{myModel}} IN myCtrl1</span> : {{myModel}}
+			<br/>
+			<button ng-click="toast()">
+				MAKE ALERT
+			</button>
+		</div>
+		<div id="id2" ng-app="myApp2" ng-controller="myCtrl2">
+			<span ng-non-bindable>{{myModel}} IN myCtrl2</span> : {{myModel}}
+			<br/>
+			<button ng-click="toast()">
+				MAKE ALERT
+			</button>
+		</div>
+		<div id="id3" ng-app="myApp3" ng-controller="myCtrl3">
+			<span ng-non-bindable>{{myModel}} IN myCtrl3</span> : {{myModel}}
+			<br/>
+			<button ng-click="toast()">
+				MAKE ALERT
+			</button>
+		</div>
+		<script src="lib/angular-1.3.14/angular.min.js"></script>
+		<script src="js/myCtrl1Module.js"></script>
+		<script src="js/myCtrl2Module.js"></script>
+		<script src="js/myCtrl3Module.js"></script>
+		<script src="js/myApp.js"></script>		
+	</body>
+</html>

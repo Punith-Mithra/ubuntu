@@ -10,6 +10,7 @@
 
 
     <input type="text" data-ng-model="name" /> Customers: {{name}}
+	<button >hello punith</button>
     <ul>
         <li data-ng-repeat="c in cust | filter: name | orderBy: 'city' ">{{c.name | uppercase}} - {{c.city | lowercase}}</li>
     </ul>

@@ -1,0 +1,75 @@
+<html>
+	<head>
+	</head>
+	<body ng-app="spa">
+		<a ng-href="#/">
+			LOGIN
+		</a> | 
+		<a ng-href="#/about/WeekEnd/YesITIs">
+			ABOUT US
+		</a> | 
+		<a ng-href="#/registration">
+			REGISTRATION
+		</a>
+
+		<div ng-view></div>
+
+		<script src="lib/angular-1.3.14/angular.min.js"></script>
+		<script src="lib/angular-1.3.14/angular-route.min.js"></script>
+		<script>
+			angular.module('spa', ['ngRoute'])
+			.config(['$routeProvider',
+					function($routeProvider) {
+				$routeProvider
+				.when("/about/:userid/:password",{
+					templateUrl: "view/about.pl",
+					//template:"",
+					controller: "aboutCtrl"
+				})
+				.when("/",{
+					templateUrl: "view/login.pl",
+					controller: "loginCtrl"
+				})
+				.when("/registration",{
+					templateUrl:"view/registration.pl",
+					controller: "registrationCtrl"
+				})
+				.otherwise({
+					redirectTo:'/404'
+				})
+			}])
+			.controller('loginCtrl',['$scope','$location','$rootScope',
+				function($scope,$location,$rootScope){
+				$scope.user={
+					userid:"",
+					password:""
+				};
+				$scope.ctrlName = 'loginCtrl';
+				$scope.host = $location.host();
+				$scope.port = $location.port();
+				$scope.path = $location.url();
+				$scope.validate = function(){
+					//alert("called");
+					if($scope.user.userid == $scope.user.password)
+						$location.path("/about/"+$scope.user.userid+"/"+$scope.user.password);
+				};
+			}])
+			.controller('registrationCtrl',['$scope', '$location',
+				function($scope,$location){
+				$scope.ctrlName = 'registrationCtrl';
+				$scope.host = $location.host();
+				$scope.port = $location.port();
+				$scope.path = $location.url();
+			}])
+			.controller('aboutCtrl',
+				['$scope','$routeParams','$location',function($scope,$routeParams,$location){
+				$scope.ctrlName = 'aboutCtrl';
+				$scope.host = $location.host();
+				$scope.port = $location.port();
+				$scope.path = $location.url();
+				alert($routeParams.userid);
+				$scope.user=$routeParams;
+			}])
+		</script>
+	</body>
+</html>

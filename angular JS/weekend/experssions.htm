@@ -1,0 +1,80 @@
+<http>
+	<head>
+	</head>
+	<body ng-app="myApp" ng-controller="myCtrl">
+		<table>
+			<tr>
+				<th colspan=2>
+					STUDENT DATA
+				</th>
+			</tr>
+			<tr>
+				<td>
+					FIRST NAME
+				</td>
+				<td>
+					{{student.firstName | uppercase}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					LAST NAME
+				</td>
+				<td>
+					{{student.lastName | lowercase}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					ROLL NUMBER
+				</td>
+				<td>
+					{{student.rollNo}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					EXPENSE
+				</td>
+				<td>
+					{{student.qty * student.price | currency:'&#8377;'}}
+				</td>
+			</tr>
+			<tr>
+				<th colspan=2>RESULT</th>
+			</tr>
+			<tr>
+				<td>ENTER SUBJECT NAME</td>
+				<td><input type="text" ng-model="sf"></td>
+			</tr>
+			<tr ng-repeat="subject in student.result | filter:sf | orderBy:'-marks'">
+				<td>{{subject.name | uppercase}}</td>
+				<td>{{subject.marks}}</td>
+			</tr>
+		</table>
+		<script src="lib/angular-1.3.14/angular.min.js"></script>
+		<script>
+			myFunction = function(s){
+				s.student={
+					firstName: 'Naresh',
+					lastName: 'IT',
+					rollNo: 1001,
+					qty: 5,
+					price: 24.50,
+					result:[
+						{name:"Maths",marks:64},
+						{name:"Physics",marks:62},
+						{name:"Chemistry",marks:68},
+						{name:"Telugu",marks:67},
+						{name:"English",marks:54},
+						{name:"Hindhi",marks:78}
+					]
+				};
+				s.sf='maths';
+			};
+
+			angular.module('myApp', [])
+			.controller('myCtrl',['$scope',myFunction]);
+		</script>
+	</body>
+</http>

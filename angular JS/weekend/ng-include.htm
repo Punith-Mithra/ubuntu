@@ -1,0 +1,22 @@
+<html>
+	<head>
+	</head>
+	<body ng-app>
+		<a href="#" ng-click="spa='view/about.pl'">
+			ABOUT US
+		</a> | 
+		<a href="#" ng-click="spa='view/login.pl'">
+			LOGIN
+		</a> | 
+		<a href="#" ng-click="spa='view/registration.pl'">
+			REGISTRATION
+		</a>
+		<div ng-include="spa"></div>
+		<hr/>
+		<div ng-include="'view/registration1.pl'"></div>
+		<script src="lib/angular-1.3.14/angular.min.js"></script>
+		<script type="text/ng-template" id="view/registration1.pl">
+			THIS IS JAVASCRIPT TEMPLATE OBJECT FOR REGISTRATION PAGE
+		</script>
+	</body>
+</html>

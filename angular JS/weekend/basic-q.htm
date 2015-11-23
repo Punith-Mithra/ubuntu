@@ -1,0 +1,71 @@
+<http>
+	<head>
+	</head>
+	<body ng-app="myApp" ng-controller="myCtrl">
+		<div style="border:solid 1px black;">
+			<button ng-click="test1()">
+				CLICK ME
+			</button><br/>
+			<input type="checkbox" ng-model="fail1"/> Fail 1<br/>
+		</div>
+		<div style="border:solid 1px black;">
+			<button ng-click="test2()">
+				CLICK ME
+			</button><br/>
+			<input type="checkbox" ng-model="fail2"/> Fail 2<br/>
+			Status: {{status2}}
+		</div>
+
+		<script src="lib/angular-1.3.14/angular.min.js"></script>
+		<script>
+			angular.module('myApp', [])
+			.controller('myCtrl', ['$scope', '$q',
+							function($scope,$q){
+				$scope.fail1 = false;
+				$scope.test1 = function(){
+					var differed = $q.defer();
+					var promise = differed.promise;
+					promise.then(
+						function(result){
+							alert("success: "+result);
+						},function(reason){
+							alert("Error: "+reason);
+						}
+					);
+					//differ = sampleQ.name();
+					if($scope.fail1)
+						differed.reject("sorry");
+					else
+						differed.resolve("cool");
+				};
+				$scope.fail2 = false;
+				$scope.test2 = function(){
+					var deffered = $q.defer();
+					var promise = deffered.promise;
+					promise.then(
+						function(result){
+							$scope.status2 = 'success pass 1 - ' + result;
+							return result + ' hussa!';
+						},
+						function(reason){
+							$scope.status2 = 'failure pass1';
+							return reason;
+						}
+					).then(
+						function(result){
+							alert("success: "+result);
+						},
+						function(reason){
+							alert("failure: "+reason);
+						}
+					)
+					if ($scope.fail2) {
+						deffered.reject("Bad Luck");
+					}
+					else
+						deffered.resolve("Hurray");
+				};
+			}]);
+		</script>
+	</body>
+</http>

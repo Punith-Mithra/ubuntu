@@ -1,0 +1,7 @@
+    1  cd
+    2  cd codeBase/WaveMaker-Studio-Enterprise/
+    3  cd wavemaker-studio
+    4  mvn clean install -DskipTests
+    5  cd
+    6  cd ubuntu/wm\ scripts/
+    7  history > build1.sh

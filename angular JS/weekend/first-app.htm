@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>
+			MY FIRST WEB APPLICATION
+		</title>
+	</head>
+	<body>
+		ENTER TEXT: <input type="text" id="text" onkeyup="bind()"/>
+		<hr/>
+		VIEW TEXT: <span id="view"></span>
+		<script>
+			function bind(){
+				var model = document.getElementById("text").value;
+				var view = document.getElementById("view");
+				view.innerHTML = model;
+			}
+		</script>
+	</body>
+</html>

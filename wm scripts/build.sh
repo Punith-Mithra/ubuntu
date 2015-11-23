@@ -1,8 +1,11 @@
 cd
-cd Installations/saas_setup/shortcuts/unix/
-sh t1stop.sh 
-sh t2stop.sh 
+cd Installations/saas_setup/shortcuts/unix
+sh tstop.sh
 
 cd
-cd codeBase/WaveMaker-Studio-Enterprise/
-mvn -Pwmstudio-local clean install -DskipTests -Dproject.props.file=../../build-helpers/filters/saas-wmstudio-local.props
+cd codeBase/WaveMaker-Studio-Enterprise/wavemaker-studio
+mvn clean install -DskipTests
+
+cd
+cd Installations/saas_setup/shortcuts/unix
+sh tstart.sh

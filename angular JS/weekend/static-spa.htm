@@ -1,0 +1,39 @@
+<html>
+	<head>
+	</head>
+	<body onload="load()">
+		<a href="#" onclick="spa('about')">
+			ABOUT US
+		</a> | 
+		<a href="#" onclick="spa('service')">
+			SERVICE
+		</a> | 
+		<a href="#" onclick="spa('contact')">
+			CONTACT US
+		</a>
+		<div id="about">
+			THIS IS ABOUT US PAGE
+		</div>
+		<div id="service">
+			THIS IS SERVICE PAGE
+		</div>
+		<div id="contact">
+			THIS IS CONTACT US PAGE
+		</div>
+		<script>
+			function spa(id){
+				document.getElementById('about').style.display='none';
+				document.getElementById('service').style.display='none';
+				document.getElementById('contact').style.display='none';
+				document.getElementById(id).style.display='block';
+			};
+
+			function load(){
+				document.getElementById('about').style.display='block';
+				document.getElementById('service').style.display='none';
+				document.getElementById('contact').style.display='none';
+			};
+
+		</script>
+	</body>
+</html>
