@@ -1,0 +1,26 @@
+<html>
+
+<head>
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body ng-app="app">
+
+   <div ng-controller="ctrl">
+      <input type="text" ng-model="data.message">
+      <h1>{{data.message | reverse}}</h1>
+   </div>
+   <div ng-controller="control">
+      <btn val="10"></btn>
+      <input type="text" ng-model="val">
+      <button ng-click='addVal(val)'>add</button>
+      <div id='holder'></div>
+   </div>
+</body>
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="appjs/scope.js"></script>
+
+</html>
