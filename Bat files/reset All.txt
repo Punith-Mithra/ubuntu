@@ -1,0 +1,17 @@
+d:
+cd codeBase/WaveMaker-Studio-Enterprise/
+git reset --hard HEAD~
+cd wavemaker-studio/
+git reset --hard HEAD~
+cd wavemaker-app-runtime/
+git reset --hard HEAD~
+cd ../wavemaker-studio-editor/
+git reset --hard HEAD~
+cd ../wavemaker-studio-commons/ 
+git reset --hard HEAD~
+cd ../wavemaker-studio-artifacts/
+git reset --hard HEAD~
+cd ../../wavemaker-studio-saas-artifacts/
+git reset --hard HEAD~
+cd ../../wm-commons-portal
+git reset --hard HEAD~

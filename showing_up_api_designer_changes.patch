@@ -1,0 +1,24 @@
+Index: wavemaker-studio-saas/wavemaker-saas-server/src/main/webapp/Gruntfile.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wavemaker-studio-saas/wavemaker-saas-server/src/main/webapp/Gruntfile.js	(revision Local version)
++++ wavemaker-studio-saas/wavemaker-saas-server/src/main/webapp/Gruntfile.js	(revision Shelved version)
+@@ -1,0 +1,0 @@
+Index: wavemaker-studio-saas/wavemaker-saas-server/src/main/webapp/editor/scripts/modules/plugins/apiDesigner/views/apiDesignerWS.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wavemaker-studio-saas/wavemaker-saas-server/src/main/webapp/editor/scripts/modules/plugins/apiDesigner/views/apiDesignerWS.html	(revision Local version)
++++ wavemaker-studio-saas/wavemaker-saas-server/src/main/webapp/editor/scripts/modules/plugins/apiDesigner/views/apiDesignerWS.html	(revision Shelved version)
+@@ -1,0 +1,0 @@
+Index: wavemaker-studio-saas/wavemaker-saas-server/src/main/webapp/editor/scripts/modules/plugins/apiDesigner/controllers/apiDesignerWSController.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- wavemaker-studio-saas/wavemaker-saas-server/src/main/webapp/editor/scripts/modules/plugins/apiDesigner/controllers/apiDesignerWSController.js	(revision Local version)
++++ wavemaker-studio-saas/wavemaker-saas-server/src/main/webapp/editor/scripts/modules/plugins/apiDesigner/controllers/apiDesignerWSController.js	(revision Shelved version)
+@@ -1,0 +1,0 @@

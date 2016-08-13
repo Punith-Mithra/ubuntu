@@ -1,4 +1,4 @@
-
+d:
 cd codeBase/WaveMaker-Studio-Enterprise/
 git pull  wmgit master
 
@@ -17,4 +17,3 @@ cd ../../wavemaker-studio-saas-artifacts/
 git pull  wmgit master
 cd ../../wm-commons-portal
 git pull wmgit master
-cd ../WaveMaker-Studio-Enterprise/wavemaker-studio/wavemaker-studio-editor/

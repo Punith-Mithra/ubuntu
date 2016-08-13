@@ -86,6 +86,7 @@ static void spell(int num){
 	     System.out.print("hundred ");
 	     temp/=10;
 	     if(temp>0);
+		if(temp%100 > 0)
 		System.out.print("and ");
 	     continue;
 	}
@@ -134,7 +135,7 @@ static void tens(int num){
 
 static void units(int num){
 
-	  switch(num){
+   switch(num){
 	case 1: System.out.print("one "); break;
 	case 2: System.out.print("two "); break;
 	case 3: System.out.print("three "); break;

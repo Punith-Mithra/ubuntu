@@ -1,17 +1,32 @@
 <html>
 
 <head>
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style>
+        .panel {
+            margin: 10px;
+        }
+        
+        .container {
+            margin: 10px;
+        }
+        
+        .container button {
+            float: right;
+        }
+        
+        .panel-heading a {
+            right: 0;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 
-<body ng-app='app' ng-init="data= [1]">
+<body ng-app='app'>
 
-	<outer><inner></inner></outer>
-
-
-
-   <!--   this is directive example with restrict E-->
+    <task-manager></task-manager>
+    <!--   this is directive example with restrict E-->
 
 
 </body>

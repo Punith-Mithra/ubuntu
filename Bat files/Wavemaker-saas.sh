@@ -1,8 +1,5 @@
 cd ~
-cd Installations/
-cd saas_setup/
-cd shortcuts/
-cd unix
+cd Installations/saas_setup/shortcuts/unix/
 sh t1start.sh 
 echo '============================================================================================================'
 echo '************************************************ t1.start***************************************************'
